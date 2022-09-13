@@ -2,8 +2,12 @@
 .banner {
   background: #5000ca22;
   padding: 2rem;
-
   /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .main-menu ul {
@@ -11,6 +15,8 @@
   padding: 0;
 
   /* 2. Få elementerne til at stå ved siden af hinanden */
+  display: flex;
+  gap: 20px;
 }
 
 /* burgermenu */
@@ -31,7 +37,8 @@
   }
 
   .main-menu {
-    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+    display: contents;
+    /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
   }
 
   .main-menu ul {
